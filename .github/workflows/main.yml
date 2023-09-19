@@ -17,14 +17,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        node-version: '14'
+        python-version: '3.x'  # Replace with your desired Python version
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # If you have any Python dependencies
 
     - name: Run label management script
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        npm install
-        node label_management.js
+      run: python label_management.py
