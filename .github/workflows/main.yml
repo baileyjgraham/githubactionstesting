@@ -1,0 +1,30 @@
+name: Label Management
+
+on:
+  workflow_run:
+    workflows: ["Daily Label Update"]
+    types:
+      - completed
+  project_card:
+    types:
+      - moved
+
+jobs:
+  handle-labels:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Run label management script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        npm install
+        node label_management.js
