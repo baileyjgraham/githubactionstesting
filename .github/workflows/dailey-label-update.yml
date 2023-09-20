@@ -1,16 +1,12 @@
 name: Label Management
 
 on:
-  workflow_run:
-    workflows: ["Dailey_Label_Update"]
-    types:
-      - completed
   project_card:
     types:
       - moved
 
 jobs:
-  handle-labels:
+  label-management:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt  # If you have any Python dependencies
 
-    - name: Run label management script
+    - name: Calculate duration and manage labels
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: python label_management.py
