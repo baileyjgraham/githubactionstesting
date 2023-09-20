@@ -2,7 +2,7 @@ name: Label Management
 
 on:
   workflow_run:
-    workflows: ["Daily_Label_Update"]
+    workflows: ["Dailey_Label_Update"]
     types:
       - completed
   project_card:
