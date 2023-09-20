@@ -15,7 +15,7 @@ def main():
     g = Github(github_token)
     repo = g.get_repo(repo_name)
 
-    column_name = "Code Review"  # update with column name when I can create projects
+    column_name = "Code Review" 
     label_prefix = "Day[s]: "
 
     project = repo.get_projects()[0]  # Assuming there's only one project board
