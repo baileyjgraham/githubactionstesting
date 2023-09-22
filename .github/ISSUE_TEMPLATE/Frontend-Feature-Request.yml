@@ -1,5 +1,6 @@
 name: Frontend Feature Request
 description: Create a frontend feature request
+labels: ['bug', 'Feature']
 title: "[Feature] Issue Title"
 body:
 - type: markdown
@@ -63,6 +64,3 @@ body:
     label: Photo Upload
     description: Attach images or screenshots (if applicable)
     placeholder: Attach files...
-
-labels:
-  - Feature
