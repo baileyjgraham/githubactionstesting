@@ -10,7 +10,6 @@ body:
       placeholder: "https://www.figma.com/file/Your-Design-File"
     validations:
       required: true
-      
   - type: input
     id: Acceptance Criteria
     attributes:
