@@ -33,7 +33,7 @@ body:
       **Acceptance Criteria:**
 
       Use the checklist below to specify the acceptance criteria for this feature. Add or remove items as needed.
-- type: checklist
+- type: checkboxes
   id: acceptance-criteria
   attributes:
     options:
