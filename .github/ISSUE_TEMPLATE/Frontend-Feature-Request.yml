@@ -15,21 +15,18 @@ body:
     label: Feature Details
     description: Provide a clear and concise description of the frontend feature.
     placeholder: Describe the feature...
-
 - type: input
   id: epic-title
   attributes:
     label: Epic Title (if applicable)
     description: Link to the corresponding Epic, if this feature is part of one.
     placeholder: Link to Epic...
-
 - type: input
   id: figma-link
   attributes:
     label: Figma Link (if applicable)
     description: Provide a link to the Figma design, if available.
-    placeholder: Link to Figma...
-
+    placeholder: Link to Figma..
 - type: markdown
   attributes:
     value: |
@@ -44,14 +41,12 @@ body:
         required: true
       - label: Criteria 2
       - label: Criteria 3
-
 - type: textarea
   id: feature-description
   attributes:
     label: Feature Description
     description: Provide a detailed description of the frontend feature's purpose and functionality.
     placeholder: Describe the feature in detail...
-
 - type: markdown
   attributes:
     value: |
