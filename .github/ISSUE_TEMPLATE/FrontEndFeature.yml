@@ -1,0 +1,59 @@
+name: Front End - Feature
+description: This is not for suggested features, this is for James and Lead Devs to create issues for features that have been discussed and agreed upon.
+body:
+  - type: input
+    id: Figma Link
+    attributes:
+      label: Figma Link
+      description: "Please provide a link to the Figma Mockup."
+      placeholder: "https://www.figma.com/file/Your-Design-File"
+    validations:
+      required: true
+      
+  - type: input
+    id: Acceptance Criteria
+    attributes:
+      label: Acceptance Criteria
+      description: " "What are the specific conditions or outcomes that the code must satisfy to be considered complete and ready for deployment?""
+      placeholder: "- [ ] All unit tests should pass.
+                    - [ ] Code follows coding standards.
+                    - [ ] ..."
+    validations:
+      required: true  
+  - type: input
+    id: php
+    attributes:
+      label: PHP Version
+      description: "Please provide the full PHP version that is powering Tinkerwell."
+      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+    validations:
+      required: true
+  - type: dropdown
+    id: location
+    attributes:
+      label: Project Location
+      description: Where is the project located?
+      options:
+        - Local
+        - Remote
+        - Somewhere else (please specify in the description!)
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Which steps do we need to take to reproduce this error?
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: If applicable, provide relevant log output. No need for backticks here.
+      render: shell
