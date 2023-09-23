@@ -1,6 +1,7 @@
 name: Front End Feature
 description: This is not for suggested features, this is for James and Lead Devs to create issues for features that have been discussed and agreed upon.
-title: "[Feature] Issue Title"
+labels: ['Feature']
+title: "[Feature][FE] - Issue Title...."
 body:
   - type: input
     id: figma-link
@@ -13,17 +14,17 @@ body:
     attributes:
       label: Acceptance Criteria
       description: What are the specific conditions or outcomes that the code must satisfy to be considered complete and ready for deployment?
-      placeholder: "- [ ] All unit tests should pass"
+      placeholder: "- [ ] Confirm that buttons display updated icons as per design."
     validations:
       required: true  
-  - type: input
-    id: php
+  - type: textarea
+    id: testing
     attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+      label: Testing Plan
+      description: What are the specific conditions or criteria that must be met, including passing Quality Assurance (Q/A), to consider the testing plan complete and ready for deployment to the development server?
+      placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
     validations:
-      required: true
+      required: true  
   - type: dropdown
     id: location
     attributes:
