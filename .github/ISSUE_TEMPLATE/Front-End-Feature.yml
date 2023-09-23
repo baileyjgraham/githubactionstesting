@@ -13,7 +13,7 @@ body:
     attributes:
       label: Acceptance Criteria
       description: What are the specific conditions or outcomes that the code must satisfy to be considered complete and ready for deployment?
-      placeholder: "-[ ] All unit tests should pass"
+      placeholder: "- [ ] All unit tests should pass"
     validations:
       required: true  
   - type: input
