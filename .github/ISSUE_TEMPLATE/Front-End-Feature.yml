@@ -31,12 +31,12 @@ body:
       placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
     validations:
       required: true  
-   - type: textarea
-      id: photos
-      attributes:
-        label: Photos/Screenshots
-        description: Please upload any relevant images or screenshots to help illustrate the feature here.
-        placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
-      validations:
-        required: true  
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos/Screenshots
+      description: Please upload any relevant images or screenshots to help illustrate the feature here.
+      placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
+    validations:
+      required: true  
     
