@@ -31,32 +31,10 @@ body:
       placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
     validations:
       required: true  
-  - type: dropdown
-    id: location
+   - type: textarea
+    id: photos
     attributes:
-      label: Project Location
-      description: Where is the project located?
-      options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
-    validations:
-      required: true
-  - type: textarea
-    id: bug-description
-    attributes:
-      label: Bug description
-      description: What happened?
-    validations:
-      required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
+      label: Photos/Screenshots (if applicable)
+      description: Please upload any relevant images or screenshots to help illustrate the feature here.
+
+  
