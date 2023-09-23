@@ -9,6 +9,12 @@ body:
       label: Figma Link (if applicable)
       description: Provide a link to the Figma design, if available.
       placeholder: "https://www.figma.com/file/..."   
+  - type: input
+    id: sister-branch
+    attributes:
+      label: BE sister branch (if applicable)
+      description: Please specify the sister back-end (BE) branch name or link..
+      placeholder: "Nabil-230443-Fix-Bug...."   
   - type: textarea
     id: criteria
     attributes:
