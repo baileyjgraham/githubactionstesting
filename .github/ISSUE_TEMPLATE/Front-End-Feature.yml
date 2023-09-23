@@ -3,19 +3,17 @@ description: This is not for suggested features, this is for James and Lead Devs
 title: "[Feature] Issue Title"
 body:
   - type: input
-    id: figma
+    id: figma-link
     attributes:
-      label: Figma Link
-      description: "Please provide a link to the Figma Mockup."
-      placeholder: "https://www.figma.com/file/Your-Design-File"
-    validations:
-      required: true
-  - type: input
+      label: Figma Link (if applicable)
+      description: Provide a link to the Figma design, if available.
+      placeholder: "https://www.figma.com/file/..."   
+  - type: textarea
     id: criteria
     attributes:
       label: Acceptance Criteria
-      description: "What are the specific conditions or outcomes that the code must satisfy to be considered complete and ready for deployment?"
-      placeholder: "[ ] All unit tests should pass"
+      description: What are the specific conditions or outcomes that the code must satisfy to be considered complete and ready for deployment?
+      placeholder: "-[ ] All unit tests should pass"
     validations:
       required: true  
   - type: input
