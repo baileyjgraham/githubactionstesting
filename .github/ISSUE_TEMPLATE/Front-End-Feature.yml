@@ -36,5 +36,5 @@ body:
     attributes:
       label: Photos/Screenshots (if applicable)
       description: Please upload any relevant images or screenshots to help illustrate the feature here.
-
+      placeholder: "- [ ] Verify that all responsive design breakpoints are functioning correctly."
   
